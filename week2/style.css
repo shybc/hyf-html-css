@@ -4,6 +4,7 @@ body {
     padding: 20px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 ul {
@@ -93,3 +94,120 @@ img {
     .grid-item {width: calc(25% - 40px);}    
 }
 
+/* animations */
+
+h1 {
+    animation: rl 1s infinite alternate ease-in-out;
+    -webkit-animation: rl 1s infinite alternate ease-in-out;
+    -moz-animation: rl 1s infinite alternate ease-in-out;
+    -ms-animation: rl 1s infinite alternate ease-in-out;
+    -o-animation: rl 1s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes rl {
+    from {
+        margin-left: 5%;
+    }
+    
+    to {
+        margin-left: -5%;
+    }
+}
+
+@-moz-keyframes rl {
+    from {
+        margin-left: 5%;
+    }
+    
+    to {
+        margin-left: -5%;
+    }
+}
+
+@-ms-keyframes rl {
+    from {
+        margin-left: 5%;
+    }
+    
+    to {
+        margin-left: -5%;
+    }
+}
+
+@-o-keyframes rl {
+    from {
+        margin-left: 5%;
+    }
+    
+    to {
+        margin-left: -5%;
+    }
+}
+
+@keyframes rl {
+    from {
+        margin-left: 5%;
+    }
+    
+    to {
+        margin-left: -5%;
+    }
+}
+
+section {
+    animation: frombottom 3s;
+    -webkit-animation: frombottom 3s;
+    -moz-animation: frombottom 3s;
+    -ms-animation: frombottom 3s;
+    -o-animation: frombottom 3s;
+}
+
+@-webkit-keyframes frombottom {
+    from {
+        margin-top: 200%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+@-moz-keyframes frombottom {
+    from {
+        margin-top: 200%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+@-ms-keyframes frombottom {
+    from {
+        margin-top: 200%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+@-o-keyframes frombottom {
+    from {
+        margin-top: 200%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+@keyframes frombottom {
+    from {
+        margin-top: 200%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
