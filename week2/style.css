@@ -2,6 +2,7 @@ body {
     background-color: #ccc;
     margin: 0;
     padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul {
@@ -48,6 +49,12 @@ img {
     flex-wrap: wrap;
 }
 
+@media all and (max-width: 500px) {
+    body{font-size: 3vw;}
+    /* to prevent text overflow when the
+    screensize is very small. */
+}
+
 @media all and (max-width: 699px) {
     .grid-item:first-child {width: calc(100% - 40px);}
     .grid-item {width: calc(50% - 40px);}
@@ -62,3 +69,4 @@ img {
     .grid-item:first-child {width: calc(50% - 40px);}
     .grid-item {width: calc(25% - 40px);}    
 }
+
