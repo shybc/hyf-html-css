@@ -1,0 +1,113 @@
+/* universal styles for all screen sizes*/
+
+html {
+    box-sizing: border-box;
+    font-size: 0.95em;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #757575;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.slogan {
+    color: #424242;
+    margin: 30px 0;
+}
+
+/* For smallest screens */
+
+@media all /*and (max-width: 580px)*/ {
+    .header, .main, .footer {
+        max-width: 100%;
+        padding: 0 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header {
+        height: 36px;
+        /*width: calc(100%-32px)*/
+        /*padding: 16px;*/
+        overflow: hidden;
+    }
+
+    .navigation {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .search-icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        float: right;
+    }
+
+    .slogan {
+        font-size: 1.625rem;
+        line-height: 1.3;
+        font-weight: 100;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .list-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 77px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin-bottom: 16px;
+        padding: 25px;
+        background-color: #fff;
+        box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.11);
+        transition: box-shadow .2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .list-item:hover {
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.11);
+    }
+
+    .list1 .list-item:first-of-type, 
+    .list1 .list-item:last-of-type {
+        height: 290px;
+    }
+
+    .list1 .list-item:first-of-type, .list .list-item:last-of-type {
+        background-repeat: no-repeat;
+        background-attachment: local;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+    }
+
+    .list1 .list-item:first-of-type {
+        background-image: url(./images/[www.thinkwithgoogle.com][16]1488thumbnailAnna-Vainer.jpg);
+    }
+
+    .list1 .list-item:last-of-type {
+        background-image: url(./images/[www.thinkwithgoogle.com][929]1480thumbnailBen-Jones.jpg);
+    }
+
+    .list1 .list-item:nth-child(n+2) {
+        border: 2px solid #000;
+    }
+
+
+}
