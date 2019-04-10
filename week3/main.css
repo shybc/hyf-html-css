@@ -26,19 +26,25 @@ body {
     margin: 30px 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
 /* For smallest screens */
 
 @media all /*and (max-width: 580px)*/ {
     .header, .main, .footer {
         max-width: 100%;
-        padding: 0 16px;
+        /*padding: 0 16px;*/
         margin-left: auto;
         margin-right: auto;
     }
     .header {
         height: 36px;
         /*width: calc(100%-32px)*/
-        /*padding: 16px;*/
+        padding: 0 16px;
         overflow: hidden;
     }
 
@@ -48,7 +54,6 @@ body {
     }
 
     .search-icon {
-        display: inline-block;
         width: 16px;
         height: 16px;
         float: right;
@@ -58,38 +63,47 @@ body {
         font-size: 1.625rem;
         line-height: 1.3;
         font-weight: 100;
+        padding: 0 16px;
     }
 
     .flex {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
+        padding: 0 16px 50px 16px;
     }
 
-    .list-item {
+    .list1 {
+        font-size: 1.125rem;
+        line-height: 1.4;
+    }
+
+    .list1 .list-item {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 77px;
+        flex-direction: row;
+        align-items: flex-end;
+        height: 127px;
         flex-grow: 1;
         flex-shrink: 1;
+        color: #424242;
         margin-bottom: 16px;
-        padding: 25px;
         background-color: #fff;
-        box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.11);
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.11);
         transition: box-shadow .2s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .list-item:hover {
-        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.11);
+    .list1 .list-item:hover {
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.11);
     }
 
     .list1 .list-item:first-of-type, 
     .list1 .list-item:last-of-type {
         height: 290px;
+        padding: 25px;
     }
 
-    .list1 .list-item:first-of-type, .list .list-item:last-of-type {
+    .list1 .list-item:first-of-type, 
+    .list1 .list-item:last-of-type {
         background-repeat: no-repeat;
         background-attachment: local;
         background-size: cover;
@@ -105,9 +119,144 @@ body {
         background-image: url(./images/[www.thinkwithgoogle.com][929]1480thumbnailBen-Jones.jpg);
     }
 
-    .list1 .list-item:nth-child(n+2) {
-        border: 2px solid #000;
+    .content-img {
+        width: 33.3333%;
+        min-width: 85px;
+        height: 107px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 10px;
+        align-self: flex-start;
+    }
+    
+    .list1 .list-item span {
+        margin: 10px;
+        width: 66%;
+    }
+    
+    .list1 .list-item:nth-of-type(2) .content-img {
+        background-image: url(./images/[www.thinkwithgoogle.com][758]1493thumbnailOmnichannel-Grocery.jpg);
     }
 
+    .list1 .list-item:nth-of-type(3) .content-img {
+        background-image: url(./images/[www.thinkwithgoogle.com][758]1493thumbnailOmnichannel-Grocery.jpg);
+    }
 
+    .list1 .list-item:nth-of-type(4) .content-img {
+        background-image: url(./images/[www.thinkwithgoogle.com][331]1481ThumbnailInternational-Womens-Day.jpg);
+    }
+
+    .list1 .list-item:nth-of-type(5) .content-img {
+        background-image: url(./images/[www.thinkwithgoogle.com][922]1408thumbnailUnited-Case-Study.jpg);
+    }
+
+    /* list-like section styling */
+    .list-like {
+        background-color: #fafafa;
+        padding: 50px 16px;
+        color: #424242;
+        line-height: 1.3;
+    }
+
+    .list-like h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 23px;
+    }
+
+    .list-like h3 {
+        font-size: 19px;
+        margin-top: 0;
+        margin-bottom: 19px;
+    }
+
+    .content-list {
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 40px;
+        color: #757575;
+        line-height: 1.6;
+    }
+
+    p.content-list {
+        color: #424242;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+
+    .content-list li {
+        margin-bottom: 10px;
+        color: #3367d6;
+        font-size: 16px;
+    }
+
+    /*list2 styling*/
+    .section.three {
+        background-color: #fafafa;
+    }
+
+    .section.three h2 {
+        font-size: 23px;
+        color: #424242;
+        margin-bottom: 30px;
+        line-height: 1.3;
+    }
+
+    .section.three .list {
+        padding-top: 0;
+    }
+
+    .section.three h3 {
+        font-size: 18px;
+        line-height: 1.4;
+        color: #424242;
+    }
+
+    .section.three p {
+        font-size: 14px;
+        color: #757575;
+        margin-top: 4px;
+        margin-bottom: 14px;
+    }
+
+    .section.three p.learn-more {
+        color: #3367d6;
+        font-weight: bold;
+    }
+
+    .list2 .li-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        flex-grow: 1;
+        flex-shrink: 1;
+        min-height: 127px;
+        color: #424242;
+        margin-bottom: 16px;
+        background-color: #fff;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.11);
+        transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .list2 .li-container:hover {
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.11);
+    }
+
+    .li-img {
+        background-image: url(./images/[www.thinkwithgoogle.com][152]bedazzler-competetive-analysis.gif);
+        width: 33.3333%;
+        min-width: 85px;
+        height: 107px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 10px;
+    }
+
+    .li-container .list-item {
+        width: 66%;
+        margin: 10px;
+    }
 }
