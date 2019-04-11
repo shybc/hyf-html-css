@@ -27,7 +27,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+    font-weight: 300;
     padding: 0;
     margin: 0;
 }
@@ -37,15 +37,24 @@ h1, h2, h3, h4, h5, h6 {
 @media all /*and (max-width: 580px)*/ {
     .header, .main, .footer {
         max-width: 100%;
-        /*padding: 0 16px;*/
         margin-left: auto;
         margin-right: auto;
     }
     .header {
         height: 36px;
-        /*width: calc(100%-32px)*/
-        padding: 0 16px;
+        padding: 20px 16px 0 16px;
         overflow: hidden;
+    }
+
+    .header h1 {
+        display: inline;
+        color: rgb(95, 99, 104);
+        font-weight: 400;
+        font-size: 23px;
+    }
+
+    .header h1 span {
+        font-weight: 500;
     }
 
     .navigation {
@@ -54,8 +63,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .search-icon {
-        width: 16px;
-        height: 16px;
+        width: 22px;
+        height: 22px;
         float: right;
     }
 
@@ -130,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
         align-self: flex-start;
     }
     
-    .list1 .list-item span {
+    .list1 .content-text {
         margin: 10px;
         width: 66%;
     }
@@ -140,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .list1 .list-item:nth-of-type(3) .content-img {
-        background-image: url(./images/[www.thinkwithgoogle.com][758]1493thumbnailOmnichannel-Grocery.jpg);
+        background-image: url(./images/[www.thinkwithgoogle.com][262]1479thumbnailMarketing-Insights.jpg);
     }
 
     .list1 .list-item:nth-of-type(4) .content-img {
@@ -149,6 +158,39 @@ h1, h2, h3, h4, h5, h6 {
 
     .list1 .list-item:nth-of-type(5) .content-img {
         background-image: url(./images/[www.thinkwithgoogle.com][922]1408thumbnailUnited-Case-Study.jpg);
+    }
+
+    .list1 span::after {
+        display: block;
+        font-size: 14px;
+        margin: 10px 0;
+        color: #757575;
+    }
+
+    .list1 span.first::after {
+        content: 'Video - March 2019';
+        color: #fff;
+    }
+
+    .list1 .list-item:nth-of-type(2) .content-text::after {
+        content: 'Article - March 2019';
+    }
+
+    .list1 .list-item:nth-of-type(3) .content-text::after {
+        content: 'Infographic - April 2019';
+    }
+
+    .list1 .list-item:nth-of-type(4) .content-text::after {
+        content: 'Perspective - March 2019';
+    }
+
+    .list1 .list-item:nth-of-type(5) .content-text::after {
+        content: 'Case Study - April 2019';
+    }
+
+    .list1 span.last::after {
+        content: 'Video - March 2019';
+        color: #fff;
     }
 
     /* list-like section styling */
@@ -163,12 +205,36 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 0;
         margin-bottom: 30px;
         font-size: 23px;
+        font-weight: 400;
     }
 
     .list-like h3 {
         font-size: 19px;
         margin-top: 0;
         margin-bottom: 19px;
+        font-weight: 400;
+    }
+
+    .list-like h3::after {
+        content: '';
+        display: inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    .list-like .resize:nth-of-type(1) h3::after {
+        background-image: url(./images/[www.thinkwithgoogle.com][995]iconresources-01.svg);
+    }
+
+    .list-like .resize:nth-of-type(2) h3::after {
+        background-image: url(./images/[www.thinkwithgoogle.com][348]iconmarketingstrategies-01.svg);
+    }
+
+    .list-like .resize:nth-of-type(3) h3::after {
+        background-image: url(./images/[www.thinkwithgoogle.com][848]iconconsumerinsights-01.svg);
     }
 
     .content-list {
@@ -192,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
         cursor: pointer;
     }
 
-    /*list2 styling*/
+    /* list2 styling */
     .section.three {
         background-color: #fafafa;
     }
@@ -202,6 +268,7 @@ h1, h2, h3, h4, h5, h6 {
         color: #424242;
         margin-bottom: 30px;
         line-height: 1.3;
+        font-weight: 400;
     }
 
     .section.three .list {
@@ -212,6 +279,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 18px;
         line-height: 1.4;
         color: #424242;
+        font-weight: 400;
     }
 
     .section.three p {
@@ -247,7 +315,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .li-img {
-        background-image: url(./images/[www.thinkwithgoogle.com][152]bedazzler-competetive-analysis.gif);
         width: 33.3333%;
         min-width: 85px;
         height: 107px;
@@ -255,6 +322,22 @@ h1, h2, h3, h4, h5, h6 {
         background-size: cover;
         background-position: center;
         margin: 10px;
+    }
+
+    .li-img.one {
+        background-image: url(./images/[www.thinkwithgoogle.com][802]bedazzler-culture-trends.gif);
+    }
+
+    .li-img.two {
+        background-image: url(./images/[www.thinkwithgoogle.com][152]bedazzler-competetive-analysis.gif);
+    }
+
+    .li-img.three {
+        background-image: url(./images/[www.thinkwithgoogle.com][632]bedazzler-consumer-insights.gif);
+    }
+
+    .li-img.four {
+        background-image: url(./images/[www.thinkwithgoogle.com][659]bedazzler-diagnostics.gif);
     }
 
     .li-container .list-item {
@@ -278,6 +361,7 @@ h1, h2, h3, h4, h5, h6 {
         cursor: pointer;
         line-height: 1.6;
         margin-bottom: 50px;
+        text-transform: uppercase;
     }
 
     .button-last {
@@ -292,9 +376,11 @@ h1, h2, h3, h4, h5, h6 {
         padding: 30px 16px;
     }
 
-    .footer p {
+    .subscribe {
         margin-bottom: 30px;
         font-size: 24px;
+        line-height: 1.3;
+        font-weight: 300;
     }
 
     .footer-button {
@@ -305,14 +391,15 @@ h1, h2, h3, h4, h5, h6 {
     .footer li {
         color: #fff;
         display: inline-block;
-        margin-right: 10px;
+        margin: 0 15px 0 0;
+        font-size: 14px;
     }
 
     .footer h2::before {
         content: '';
         width: 100%;
         height: 0.5px;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.4);
         position: relative;
         top: 0;
         display: block;
@@ -320,8 +407,239 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .footer h2 {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         font-weight: bold;
+    }
+
+    .lang-selector {
+        color: #fff;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .lang-selector::after {
+        content: '˅';
+        margin-left: 30px;
+        font-size: inherit;
+    }
+
+    .footer-icon {
+        display: inline-block;
+        height: auto;
+        width: 30px;
+        margin-right: 10px;
+    }
+}
+
+/* for middle sized screens */
+@media all and (min-width: 581px) and (max-width: 900px) {
+    .header {
+        height: 36px;
+        padding: 20px 32px 0 32px;
+        overflow: hidden;
+    }
+
+    .slogan {
+        width: 60%;
+        font-size: 33px;
+        line-height: 1.3;
+        font-weight: 300;
+        padding: 0 32px;
+    }
+
+    .list1 .first, .list1 .last {
+        max-width: 60%;
+    }
+
+    /*.list1:first-child::after, .list1:last-child::after
+    {
+        background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.3) 40%,rgba(0,0,0,.4));
+        content: '';
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        display: block;
+    }*/
+
+    .flex {
+        padding: 0 32px 50px 32px;
+    }
+
+    .list1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-shrink: 1;
+        justify-content: space-between;
+    }
+
+    .list1 .list-item:first-of-type {
+        background-image: url(./images/[www.thinkwithgoogle.com][358]1488thumbnailAnna-Vainer.jpg);
+    }
+
+    .list1 .list-item:last-of-type {
+        background-image: url(./images/[www.thinkwithgoogle.com][730]1480thumbnailBen-Jones.jpg);
+    }
+
+    .list1 .list-item {
+        margin-bottom: 24px;
+    }
+
+    .list1 .resize {
+        width: calc(50% - 76px);
+        height: 330px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .list1 .resize:nth-of-type(2n-4) {
+        margin-right: 24px;
+    }
+
+    .content-img {
+        width: calc(100% - 50px);
+        margin: 0;
+        padding: 25px;
+    }
+
+    .list1 .content-text {
+        width: calc(100% - 50px);
+        margin: 0;
+        padding: 25px;
+        font-size: 18px;
+    }
+
+    .list1 span::after {
+        margin: 20px 0;
+    }
+
+    .list1 .list-item:nth-of-type(2) .content-img {
+        background-image: url(./images/[www.thinkwithgoogle.com][667]1493thumbnailOmnichannel-Grocery.jpg);
+    }
+
+    .list1 .list-item:nth-of-type(3) .content-img {
+        background-image: url(./images/[www.thinkwithgoogle.com][390]1479thumbnailMarketing-Insights.jpg);
+    }
+
+    .list1 .list-item:nth-of-type(4) .content-img {
+        background-image: url(./images/[www.thinkwithgoogle.com][383]1481ThumbnailInternational-Womens-Day.jpg);
+    }
+
+    .list1 .list-item:nth-of-type(5) .content-img {
+        background-image: url(./images/[www.thinkwithgoogle.com][25]1408thumbnailUnited-Case-Study.jpg);
+    }
+
+    /* list-like section styling */
+    .list-like {
+        padding: 50px 32px;
+        line-height: 1.6;
+    }
+
+    .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .list-like .resize {
+        width: calc(50%);
+    }
+
+    .list-like .resize p {
+        padding-right: 30px;
+    }
+
+    .list-like h2 {
+        margin-bottom: 40px;
+        font-size: 27px;
+        font-weight: 300;
+        width: calc(100% - 64px);
+    }
+
+    /* list2 styling */
+
+    .section.three h2 {
+        font-size: 27px;
+        margin-bottom: 40px;
+        font-weight: 300;
+    }
+
+    .list2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .list2 .li-container {
+        width: calc(50% - 64px);
+        height: 382px;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    .list2 .li-container:nth-of-type(odd) {
+        margin-right: 24px;
+    }
+
+    .li-img {
+        width: 100%;
+        height: 160px;
+        margin: 0;
+    }
+     
+    .li-container .list-item {
+        width: calc(100% - 50px);
+        margin: 25px;
+    }
+
+    .list2 .list-item {
+        height: 172px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .li-img.one {
+        background-image: url(./images/[www.thinkwithgoogle.com][802]bedazzler-culture-trends.gif);
+    }
+
+    .li-img.two {
+        background-image: url(./images/[www.thinkwithgoogle.com][153]bedazzler-competetive-analysis.gif);
+    }
+
+    .li-img.three {
+        background-image: url(./images/[www.thinkwithgoogle.com][632]bedazzler-consumer-insights.gif);
+    }
+
+    .li-img.four {
+        background-image: url(./images/[www.thinkwithgoogle.com][970]bedazzler-diagnostics.gif);
+    }
+
+    /* footer styling */
+    .footer {
+        padding: 30px 32px;
+    }
+
+    .subscribe {
+        margin-left: 57px;
+        margin-bottom: 30px;
+        font-size: 27px;
+        width: 60%;
+    }
+
+    .footer-button {
+        margin-left: 57px;
+    }
+
+    .lang-selector {
+        width: 302px;
+    }
+
+    .icon-bar {
+        display: inline-block;
+        width: 216px;
     }
 
 
