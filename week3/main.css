@@ -1,7 +1,5 @@
-/* universal styles for all screen sizes*/
 html {
     box-sizing: border-box;
-    font-size: 0.95em;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -35,412 +33,431 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+
+.google {
+    letter-spacing: -2.5px;
+}
+
 /* For smallest screens */
-/*@media all and (max-width: 580px) {*/
-    .header, .main, .footer {
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.header, .main, .footer {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .header {
-        height: 36px;
-        padding: 20px 16px 0 16px;
-        overflow: hidden;
-    }
+.header {
+    height: 36px;
+    padding: 20px 16px 0 16px;
+    overflow: hidden;
+}
 
-    .header h1 {
-        display: inline;
-        color: rgb(95, 99, 104);
-        font-weight: 400;
-        font-size: 23px;
-    }
+.header h1 {
+    display: inline;
+    color: rgb(95, 99, 104);
+    font-weight: 400;
+    font-size: 23px;
+}
 
-    .header h1 span {
-        font-weight: 500;
-    }
+.header h1 span {
+    font-weight: 500;
+}
 
-    .navigation {
-        display: inline-block;
-        margin-right: 20px;
-    }
+.navigation {
+    background-image: url(./images/menu-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 15px;
+    width: 23px;
+    height: 18px;
+}
 
-    .search-icon {
-        width: 22px;
-        height: 22px;
-        float: right;
-    }
+.search-icon {
+    width: 20px;
+    height: 20px;
+    float: right;
+}
 
-    .slogan {
-        font-size: 1.625rem;
-        line-height: 1.3;
-        font-weight: 100;
-        padding: 0 16px;
-    }
+.slogan {
+    font-size: 1.625rem;
+    line-height: 1.3;
+    font-weight: 100;
+    padding: 0 16px;
+}
 
-    .flex {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        padding: 0 16px 50px 16px;
-    }
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0 16px 50px 16px;
+}
 
-    .list1 {
-        font-size: 1.125rem;
-        line-height: 1.4;
-    }
+.list1 {
+    font-size: 1.125rem;
+    line-height: 1.4;
+}
 
-    .list1 .list-item {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        height: 127px;
-        flex-grow: 1;
-        flex-shrink: 1;
-        color: #424242;
-        margin-bottom: 16px;
-        background-color: #fff;
-        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.11);
-        transition: box-shadow .2s cubic-bezier(0.4, 0, 0.2, 1);
-    }
+.list1 .list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 127px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    color: #424242;
+    margin-bottom: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.11);
+    transition: box-shadow .2s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    .list1 .list-item:hover {
-        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.11);
-    }
+.list1 .list-item:hover {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.11);
+}
 
-    .list1 .list-item:first-of-type, 
-    .list1 .list-item:last-of-type {
-        height: 290px;
-        padding: 25px;
-    }
+.list1 .list-item:first-of-type, 
+.list1 .list-item:last-of-type {
+    height: 290px;
+    padding: 25px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
 
-    .list1 .list-item:first-of-type, 
-    .list1 .list-item:last-of-type {
-        background-repeat: no-repeat;
-        background-attachment: local;
-        background-size: cover;
-        background-position: center;
-        color: #fff;
-    }
+.list1 .list-item:first-of-type {
+    background-image: url(./images/1515_Thumbnail_Personal-Primetime-Video_1.width-1000.jpg);
+}
 
-    .list1 .list-item:first-of-type {
-        background-image: url(./images/[www.thinkwithgoogle.com][16]1488thumbnailAnna-Vainer.jpg);
-    }
+.list1 .list-item:last-of-type {
+    background-image: url(./images/[www.thinkwithgoogle.com][929]1480thumbnailBen-Jones.jpg);
+}
 
-    .list1 .list-item:last-of-type {
-        background-image: url(./images/[www.thinkwithgoogle.com][929]1480thumbnailBen-Jones.jpg);
-    }
+.content-img {
+    width: 33.3333%;
+    min-width: 85px;
+    height: 107px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    align-self: flex-start;
+}
 
-    .content-img {
-        width: 33.3333%;
-        min-width: 85px;
-        height: 107px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 10px;
-        align-self: flex-start;
-    }
-    
-    .list1 .content-text {
-        margin: 10px;
-        width: 66%;
-    }
-    
-    .list1 .list-item:nth-of-type(2) .content-img {
-        background-image: url(./images/[www.thinkwithgoogle.com][758]1493thumbnailOmnichannel-Grocery.jpg);
-    }
+.list1 .content-text {
+    margin: 10px;
+    width: 66%;
+}
 
-    .list1 .list-item:nth-of-type(3) .content-img {
-        background-image: url(./images/[www.thinkwithgoogle.com][262]1479thumbnailMarketing-Insights.jpg);
-    }
+.list1 .list-item:nth-of-type(2) .content-img {
+    background-image: url(./images/[www.thinkwithgoogle.com][758]1493thumbnailOmnichannel-Grocery.jpg);
+}
 
-    .list1 .list-item:nth-of-type(4) .content-img {
-        background-image: url(./images/[www.thinkwithgoogle.com][331]1481ThumbnailInternational-Womens-Day.jpg);
-    }
+.list1 .list-item:nth-of-type(3) .content-img {
+    background-image: url(./images/Thumbnail_Gaming.png);
+}
 
-    .list1 .list-item:nth-of-type(5) .content-img {
-        background-image: url(./images/[www.thinkwithgoogle.com][922]1408thumbnailUnited-Case-Study.jpg);
-    }
+.list1 .list-item:nth-of-type(4) .content-img {
+    background-image: url(./images/[www.thinkwithgoogle.com][331]1481ThumbnailInternational-Womens-Day.jpg);
+}
 
-    .list1 span::after {
-        display: block;
-        font-size: 14px;
-        margin: 10px 0;
-        color: #757575;
-    }
+.list1 .list-item:nth-of-type(5) .content-img {
+    background-image: url(./images/[www.thinkwithgoogle.com][922]1408thumbnailUnited-Case-Study.jpg);
+}
 
-    .list1 span.first::after {
-        content: 'Video - March 2019';
-        color: #fff;
-    }
+.list1 span::after {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0;
+    color: #757575;
+}
 
-    .list1 .list-item:nth-of-type(2) .content-text::after {
-        content: 'Article - March 2019';
-    }
+.list1 span.first::after {
+    content: 'Video - March 2019';
+    color: #fff;
+}
 
-    .list1 .list-item:nth-of-type(3) .content-text::after {
-        content: 'Infographic - April 2019';
-    }
+.list1 .list-item:nth-of-type(2) .content-text::after {
+    content: 'Article - March 2019';
+}
 
-    .list1 .list-item:nth-of-type(4) .content-text::after {
-        content: 'Perspective - March 2019';
-    }
+.list1 .list-item:nth-of-type(3) .content-text::after {
+    content: 'Infographic - April 2019';
+}
 
-    .list1 .list-item:nth-of-type(5) .content-text::after {
-        content: 'Case Study - April 2019';
-    }
+.list1 .list-item:nth-of-type(4) .content-text::after {
+    content: 'Perspective - March 2019';
+}
 
-    .list1 span.last::after {
-        content: 'Video - March 2019';
-        color: #fff;
-    }
+.list1 .list-item:nth-of-type(5) .content-text::after {
+    content: 'Case Study - April 2019';
+}
 
-    /* list-like section styling */
-    .list-like {
-        background-color: #fafafa;
-        padding: 50px 16px;
-        color: #424242;
-        line-height: 1.3;
-    }
+.list1 span.last::after {
+    content: 'Video - March 2019';
+    color: #fff;
+}
 
-    .list-like h2 {
-        margin-top: 0;
-        margin-bottom: 30px;
-        font-size: 23px;
-        font-weight: 400;
-    }
+/* list-like section styling */
+.list-like {
+    background-color: #fafafa;
+    padding: 50px 16px;
+    color: #424242;
+    line-height: 1.3;
+}
 
-    .list-like h3 {
-        font-size: 19px;
-        margin-top: 0;
-        margin-bottom: 19px;
-        font-weight: 400;
-    }
+.list-like h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 23px;
+    font-weight: 400;
+}
 
-    .list-like h3::after {
-        content: '';
-        display: inline-block;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 20px;
-        height: 20px;
-        margin-left: 10px;
-    }
+.list-like h3 {
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 19px;
+    font-weight: 400;
+}
 
-    .list-like .resize:nth-of-type(1) h3::after {
-        background-image: url(./images/[www.thinkwithgoogle.com][995]iconresources-01.svg);
-    }
+.list-like h3::after {
+    content: '';
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
 
-    .list-like .resize:nth-of-type(2) h3::after {
-        background-image: url(./images/[www.thinkwithgoogle.com][348]iconmarketingstrategies-01.svg);
-    }
+.list-like .resize:nth-of-type(1) h3::after {
+    background-image: url(./images/[www.thinkwithgoogle.com][995]iconresources-01.svg);
+}
 
-    .list-like .resize:nth-of-type(3) h3::after {
-        background-image: url(./images/[www.thinkwithgoogle.com][848]iconconsumerinsights-01.svg);
-    }
+.list-like .resize:nth-of-type(2) h3::after {
+    background-image: url(./images/[www.thinkwithgoogle.com][348]iconmarketingstrategies-01.svg);
+}
 
-    .content-list {
-        margin-top: 0;
-        padding: 0;
-        margin-bottom: 20px;
-        color: #757575;
-        line-height: 1.6;
-    }
+.list-like .resize:nth-of-type(3) h3::after {
+    background-image: url(./images/[www.thinkwithgoogle.com][848]iconconsumerinsights-01.svg);
+}
 
-    p.content-list {
-        color: #424242;
-        margin-bottom: 16px;
-        font-size: 16px;
-    }
+.content-list {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #757575;
+    line-height: 1.6;
+}
 
-    .content-list li {
-        margin-bottom: 10px;
-        color: #3367d6;
-        font-size: 16px;
-        cursor: pointer;
-    }
+p.content-list {
+    color: #424242;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
 
-    /* list2 styling */
-    .section.three {
-        background-color: #fafafa;
-    }
+.content-list li {
+    margin-bottom: 10px;
+    color: #3367d6;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-    .section.three h2 {
-        font-size: 23px;
-        color: #424242;
-        margin-bottom: 30px;
-        line-height: 1.3;
-        font-weight: 400;
-    }
+/* list2 styling */
+.section.three {
+    background-color: #fafafa;
+}
 
-    .section.three .list {
-        padding-top: 0;
-    }
+.section.three h2 {
+    font-size: 23px;
+    color: #424242;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    font-weight: 400;
+}
 
-    .section.three h3 {
-        font-size: 18px;
-        line-height: 1.4;
-        color: #424242;
-        font-weight: 400;
-    }
+.section.three .list {
+    padding-top: 0;
+}
 
-    .section.three p {
-        font-size: 14px;
-        color: #757575;
-        margin-top: 4px;
-        margin-bottom: 14px;
-    }
+.section.three h3 {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #424242;
+    font-weight: 400;
+}
 
-    .section.three p.learn-more {
-        color: #3367d6;
-        font-weight: bold;
-        cursor: pointer;
-    }
+.section.three p {
+    font-size: 14px;
+    color: #757575;
+    margin-top: 4px;
+    margin-bottom: 14px;
+}
 
-    .list2 .li-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        flex-grow: 1;
-        flex-shrink: 1;
-        min-height: 127px;
-        color: #424242;
-        margin-bottom: 16px;
-        background-color: #fff;
-        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.11);
-        transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
-    }
+.section.three p.learn-more {
+    color: #3367d6;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-    .list2 .li-container:hover {
-        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.11);
-    }
+.list2 .li-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: 127px;
+    color: #424242;
+    margin-bottom: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.11);
+    transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    .li-img {
-        width: 33.3333%;
-        min-width: 85px;
-        height: 107px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 10px;
-    }
+.list2 .li-container:hover {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.11);
+}
 
-    .li-img.one {
-        background-image: url(./images/[www.thinkwithgoogle.com][802]bedazzler-culture-trends.gif);
-    }
+.li-img {
+    width: 33.3333%;
+    min-width: 85px;
+    height: 107px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+}
 
-    .li-img.two {
-        background-image: url(./images/[www.thinkwithgoogle.com][152]bedazzler-competetive-analysis.gif);
-    }
+.li-img.one {
+    background-image: url(./images/[www.thinkwithgoogle.com][802]bedazzler-culture-trends.gif);
+}
 
-    .li-img.three {
-        background-image: url(./images/[www.thinkwithgoogle.com][632]bedazzler-consumer-insights.gif);
-    }
+.li-img.two {
+    background-image: url(./images/[www.thinkwithgoogle.com][152]bedazzler-competetive-analysis.gif);
+}
 
-    .li-img.four {
-        background-image: url(./images/[www.thinkwithgoogle.com][659]bedazzler-diagnostics.gif);
-    }
+.li-img.three {
+    background-image: url(./images/[www.thinkwithgoogle.com][632]bedazzler-consumer-insights.gif);
+}
 
-    .li-container .list-item {
-        width: 66%;
-        margin: 10px;
-    }
+.li-img.four {
+    background-image: url(./images/[www.thinkwithgoogle.com][659]bedazzler-diagnostics.gif);
+}
 
-    .section.three {
-        padding-bottom: 20px;
-    }
+.li-container .list-item {
+    width: 66%;
+    margin: 10px;
+}
 
-    /* button styling*/
-    .button {
-        background-color: #3367d6;
-        color: white;
-        padding: 12px 20px;
-        border: 0;
-        border-radius: 2px;
-        font-weight: bold;
-        display: block;
-        cursor: pointer;
-        line-height: 1.6;
-        margin-bottom: 50px;
-        text-transform: uppercase;
-    }
+.section.three {
+    padding-bottom: 20px;
+}
 
-    .button-last {
-        margin-left: auto;
-        margin-right: auto;
-    }
+/* button styling*/
+.button {
+    background-color: #3367d6;
+    color: white;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 2px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
 
-    /* footer styling */
-    .footer {
-        background-color: #3367d6;
-        color: #fff;
-        padding: 30px 16px;
-    }
+.button-last {
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .subscribe {
-        margin-bottom: 30px;
-        font-size: 24px;
-        line-height: 1.3;
-        font-weight: 300;
-    }
+/* footer styling */
+.footer {
+    background-color: #3367d6;
+    color: #fff;
+    padding: 30px 16px;
+}
 
-    .footer-button {
-        background-color: #fff;
-        color: #3367d6;
-    }
+.subscribe {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 300;
+}
 
-    .footer li {
-        color: #fff;
-        display: inline-block;
-        margin: 0 15px 0 0;
-        font-size: 14px;
-    }
+.footer-button {
+    background-color: #fff;
+    color: #3367d6;
+}
 
-    .footer h2::before {
-        content: '';
-        width: 100%;
-        height: 0.5px;
-        background-color: rgba(255, 255, 255, 0.4);
-        position: relative;
-        top: 0;
-        display: block;
-        margin-bottom: 30px;
-    }
+.footer li {
+    color: #fff;
+    display: inline-block;
+    margin: 0 15px 0 0;
+    font-size: 14px;
+}
 
-    .footer h2 {
-        margin-bottom: 20px;
-        font-weight: bold;
-    }
+.footer h2::before {
+    content: '';
+    width: 100%;
+    height: 0.5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: relative;
+    top: 0;
+    display: block;
+    margin-bottom: 30px;
+}
 
-    .lang-selector {
-        color: #fff;
-        display: inline-block;
-        cursor: pointer;
-        font-size: 16px;
-    }
+.footer h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
 
-    .lang-selector::after {
-        content: '˅';
-        margin-left: 70px;
-        font-size: inherit;
-    }
+.lang-selector {
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-    .footer-icon {
-        display: inline-block;
-        height: auto;
-        width: 30px;
-        margin-right: 10px;
-    }
+.lang-selector::after {
+    content: '˅';
+    margin-left: 70px;
+    font-size: inherit;
+}
 
-    .hide {
-        display: none;
-    }
-/*}*/
+.footer-icon {
+    display: inline-block;
+    height: 25px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.hide {
+    display: none;
+}
 
 /* for middle sized screens */
-@media /*all and */(min-width: 581px) and (max-width: 900px) {
+@media all and (min-width: 581px) and (max-width: 1000px) {
     .header {
         height: 36px;
         padding: 20px 32px 0 32px;
@@ -465,6 +482,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .list1 {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         flex-grow: 1;
         flex-shrink: 1;
@@ -472,11 +490,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .list1 .list-item:first-of-type {
-        background-image: url(./images/[www.thinkwithgoogle.com][358]1488thumbnailAnna-Vainer.jpg);
+        background-image: url(./images/1515_Thumbnail_Personal-Primetime-Video_1.width-1000.jpg);
+        width: calc(100% - 64px);
     }
 
     .list1 .list-item:last-of-type {
         background-image: url(./images/[www.thinkwithgoogle.com][730]1480thumbnailBen-Jones.jpg);
+        width: calc(100% - 64px);
     }
 
     .list1 .list-item {
@@ -517,7 +537,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .list1 .list-item:nth-of-type(3) .content-img {
-        background-image: url(./images/[www.thinkwithgoogle.com][390]1479thumbnailMarketing-Insights.jpg);
+        background-image: url(./images/Thumbnail_Gaming.png);
     }
 
     .list1 .list-item:nth-of-type(4) .content-img {
@@ -555,7 +575,7 @@ h1, h2, h3, h4, h5, h6 {
         width: calc(100% - 64px);
     }
 
-    /* list2 styling */
+    /* section three styling */
     .section.three h2 {
         font-size: 27px;
         margin-bottom: 40px;
@@ -597,6 +617,11 @@ h1, h2, h3, h4, h5, h6 {
         flex-wrap: nowrap;
     }
 
+    .inside-container {
+        min-height: 135px;
+        margin-bottom: 20px;
+    }
+
     .li-img.one {
         background-image: url(./images/[www.thinkwithgoogle.com][802]bedazzler-culture-trends.gif);
     }
@@ -629,17 +654,13 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 57px;
     }
 
-    .lang-selector {
-        display: inline-block;
-    }
-
     .icon-bar {
         float: right;
     }
 }
 
 /* for big sized screens */
-@media /*all and */(min-width: 901px) and (max-width: 1061px) {
+@media all and (min-width: 1001px) and (max-width: 1170px) {
     .hide {
         display: inherit;
     }
@@ -656,6 +677,7 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0px 25px;
         font-size: 16px;
         font-weight: 400;
+        display: inline-block;
     }
 
     .slogan-container {
@@ -686,7 +708,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .slogan-container span {
         float: right;
-        width: 33%;
+        width: 25%;
         color: #3367d6;
         font-size: 14px;
         font-weight: 500;
@@ -728,7 +750,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .list1 .list-item:first-of-type {
-        background-image: url(./images/[www.thinkwithgoogle.com][358]1488thumbnailAnna-Vainer.jpg);
+        background-image: url(./images/1515_Thumbnail_Personal-Primetime-Video_1.width-1000.jpg);
     }
 
     .list1 .list-item:last-of-type {
@@ -785,7 +807,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .list1 .list-item:nth-of-type(3) .content-img {
-        background-image: url(./images/[www.thinkwithgoogle.com][390]1479thumbnailMarketing-Insights.jpg);
+        background-image: url(./images/Thumbnail_Gaming.png);
     }
 
     .list1 .list-item:nth-of-type(4) .content-img {
@@ -824,7 +846,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-right: 30px;
     }
 
-    /*list 2 styling*/
+    /*section three styling*/
     .section.three {
         justify-content: space-between;
         padding-bottom: 39px;
@@ -844,7 +866,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .section.three .li-container {
         width: calc(25% - 136px);
-        height: 458px;
+        height: 411px;
         margin: 0;
         flex-direction: column;
     }
@@ -855,7 +877,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .li-img {
         width: 100%;
-        height: 160px;
+        min-height: 160px;
         margin: 0;
     }
 
@@ -869,6 +891,11 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
+    }
+
+    .inside-container {
+        min-height: 160px;
+        margin-bottom: 20px;
     }
 
     .li-img.one {
@@ -902,10 +929,20 @@ h1, h2, h3, h4, h5, h6 {
 
     .footer-button {
         margin-left: 78.6px;
+        margin-bottom: 0;
     }
 
-    .lang-selector {
+    .footer h2 {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    .footer .content-list {
         display: inline-block;
+    }
+
+    .footer .lang-selector {
+        min-width: 50%;
     }
 
     .icon-bar {
@@ -917,7 +954,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media all and (min-width: 1062px) {
+@media all and (min-width: 1171px) {
     .hide {
         display: inherit;
     }
@@ -927,6 +964,8 @@ h1, h2, h3, h4, h5, h6 {
         height: 36px;
         padding: 20px 32px 0 32px;
         overflow: hidden;
+        display: flex;
+        flex-direction: row;
     }
 
     .header .lang-selector {
@@ -934,11 +973,15 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0px 25px;
         font-size: 16px;
         font-weight: 400;
+        margin-top: 6px;
     }
 
     .header-menu {
-        display: inline;
-        margin-left: 90px;
+        display: inline-block;
+        padding: 0;
+        margin-left: auto;
+        margin-right: 15px;
+        margin-top: 6px;
         color: #424242;
     }
 
@@ -947,6 +990,10 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 10px;
         margin-right: 10px;
         font-size: 16px;
+    }
+
+    .search-icon {
+        margin-top: 6px;
     }
 
     .navigation {
@@ -1024,7 +1071,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .list1 .list-item:first-of-type {
-        background-image: url(./images/[www.thinkwithgoogle.com][358]1488thumbnailAnna-Vainer.jpg);
+        background-image: url(./images/1515_Thumbnail_Personal-Primetime-Video_1.width-1000.jpg);
     }
 
     .list1 .list-item:last-of-type {
@@ -1081,7 +1128,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .list1 .list-item:nth-of-type(3) .content-img {
-        background-image: url(./images/[www.thinkwithgoogle.com][390]1479thumbnailMarketing-Insights.jpg);
+        background-image: url(./images/Thumbnail_Gaming.png);
     }
 
     .list1 .list-item:nth-of-type(4) .content-img {
@@ -1120,7 +1167,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-right: 30px;
     }
 
-    /*list 2 styling*/
+    /*section three styling*/
     .section.three {
         justify-content: space-between;
         padding-bottom: 39px;
@@ -1140,7 +1187,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .section.three .li-container {
         width: calc(25% - 136px);
-        height: 458px;
+        height: 411px;
         margin: 0;
         flex-direction: column;
     }
@@ -1151,7 +1198,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .li-img {
         width: 100%;
-        height: 160px;
+        min-height: 160px;
         margin: 0;
     }
 
@@ -1165,6 +1212,11 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
+    }
+
+    .inside-container {
+        min-height: 160px;
+        margin-bottom: 15px;
     }
 
     .li-img.one {
@@ -1200,8 +1252,17 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 78.6px;
     }
 
-    .lang-selector {
+    .footer h2 {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    .footer .content-list {
         display: inline-block;
+    }
+
+    .footer .lang-selector {
+        min-width: 50%;
     }
 
     .icon-bar {
